@@ -1,0 +1,190 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="Page-1" id="glfVT2vjcOqgIgHhnKz-">
+    <mxGraphModel dx="946" dy="2355" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zBEhMx2cBEyvyBUSuPYj-1" target="zBEhMx2cBEyvyBUSuPYj-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-1" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="240" y="40" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zBEhMx2cBEyvyBUSuPYj-9" target="zBEhMx2cBEyvyBUSuPYj-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-9" value="Playe Enters Level" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="230" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zBEhMx2cBEyvyBUSuPYj-11" target="zBEhMx2cBEyvyBUSuPYj-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-15" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zBEhMx2cBEyvyBUSuPYj-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zBEhMx2cBEyvyBUSuPYj-11" target="zBEhMx2cBEyvyBUSuPYj-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-18" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zBEhMx2cBEyvyBUSuPYj-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-11" value="Does Player Move Towards Objective?" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=2;rounded=0;perimeterSpacing=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="320" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-13" value="Player Remains Idle" style="whiteSpace=wrap;html=1;strokeWidth=2;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zBEhMx2cBEyvyBUSuPYj-19" target="zBEhMx2cBEyvyBUSuPYj-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-22" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zBEhMx2cBEyvyBUSuPYj-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zBEhMx2cBEyvyBUSuPYj-19" target="zBEhMx2cBEyvyBUSuPYj-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-26" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zBEhMx2cBEyvyBUSuPYj-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-19" value="Is Player Spotted?" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="480" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-20" value="Level Failed" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-23" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="zBEhMx2cBEyvyBUSuPYj-20" target="zBEhMx2cBEyvyBUSuPYj-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="30" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zBEhMx2cBEyvyBUSuPYj-24" target="zBEhMx2cBEyvyBUSuPYj-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-36" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zBEhMx2cBEyvyBUSuPYj-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zBEhMx2cBEyvyBUSuPYj-24" target="zBEhMx2cBEyvyBUSuPYj-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-39" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zBEhMx2cBEyvyBUSuPYj-38">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-24" value="Does Player Stun Guardian?" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="455" y="480" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zBEhMx2cBEyvyBUSuPYj-27" target="zBEhMx2cBEyvyBUSuPYj-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-44" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zBEhMx2cBEyvyBUSuPYj-41">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zBEhMx2cBEyvyBUSuPYj-27" target="zBEhMx2cBEyvyBUSuPYj-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-65" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zBEhMx2cBEyvyBUSuPYj-43">
+          <mxGeometry x="-0.2286" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-27" value="Does Player Continue Level?" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="455" y="620" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-37" value="GuardianContinues Roaming" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-40" value="Player Remains Idle" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zBEhMx2cBEyvyBUSuPYj-42" target="zBEhMx2cBEyvyBUSuPYj-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-47" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zBEhMx2cBEyvyBUSuPYj-46">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zBEhMx2cBEyvyBUSuPYj-42" target="zBEhMx2cBEyvyBUSuPYj-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-50" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zBEhMx2cBEyvyBUSuPYj-49">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-42" value="Does Player Complete Puzzles?" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="750" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-45" value="Level Remains Incomplete" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="750" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zBEhMx2cBEyvyBUSuPYj-48" target="zBEhMx2cBEyvyBUSuPYj-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-66" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zBEhMx2cBEyvyBUSuPYj-52">
+          <mxGeometry x="-0.3" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="zBEhMx2cBEyvyBUSuPYj-48" target="zBEhMx2cBEyvyBUSuPYj-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="695" y="910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-55" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zBEhMx2cBEyvyBUSuPYj-54">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-59" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-48" value="Does Player Collect Ancient Shard?" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="880" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zBEhMx2cBEyvyBUSuPYj-51" target="zBEhMx2cBEyvyBUSuPYj-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-57" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zBEhMx2cBEyvyBUSuPYj-56">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zBEhMx2cBEyvyBUSuPYj-51" target="zBEhMx2cBEyvyBUSuPYj-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-60" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zBEhMx2cBEyvyBUSuPYj-59">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-51" value="Does Player Reach End of Level?" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="1020" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-58" value="Levle is Complete" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="1170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-63" value="End" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="480" y="1300" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zBEhMx2cBEyvyBUSuPYj-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="zBEhMx2cBEyvyBUSuPYj-58" target="zBEhMx2cBEyvyBUSuPYj-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
