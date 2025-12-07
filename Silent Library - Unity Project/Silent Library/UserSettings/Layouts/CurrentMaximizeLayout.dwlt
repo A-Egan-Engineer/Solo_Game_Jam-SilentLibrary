@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 18341
+  controlID: 20406
   draggingID: 0
 --- !u!114 &2
 MonoBehaviour:
@@ -196,18 +196,13 @@ MonoBehaviour:
     m_DynamicPanelBehavior: 0
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs:
-      - m_Data: -15502
+      scrollPos: {x: 0, y: 2257}
+      m_SelectedIDs: []
       m_LastClickedID:
-        m_Data: -15502
+        m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -23434
-      - m_Data: -15534
-      - m_Data: -15502
-      - m_Data: -15490
-      - m_Data: -2424
       - m_Data: -1314
+      - m_Data: 49002
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -257,7 +252,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 112}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 18326
+  controlID: 20397
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -278,8 +273,8 @@ MonoBehaviour:
     y: 0
     width: 1755
     height: 890
-  m_MinSize: {x: 202, y: 226}
-  m_MaxSize: {x: 4002, y: 4026}
+  m_MinSize: {x: 201, y: 226}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 7}
   m_Panes:
   - {fileID: 7}
@@ -782,9 +777,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 901.2007, y: 304.50223, z: -14.04846}
+    m_Target: {x: 0.22455418, y: 0.5928391, z: -0.0063680736}
     speed: 2
-    m_Value: {x: 901.2007, y: 304.50223, z: -14.04846}
+    m_Value: {x: 0.6557862, y: 0.36745304, z: -0.0034759322}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -834,9 +829,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 291.29272
+    m_Target: 6.716184
     speed: 2
-    m_Value: 291.29272
+    m_Value: 6.4269705
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -945,7 +940,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Environments/RPGW_Caves/Animated
+    - Assets/Environments/RPGW_Caves/Sliced
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -955,7 +950,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Environments/RPGW_Caves/Animated
+  - Assets/Environments/RPGW_Caves/Sliced
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /media/devlord/Additional/GitProjects/Solo_Game_Jam-SilentLibrary/Silent
     Library - Unity Project/Silent Library
@@ -965,17 +960,17 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
-    - m_Data: 55236
+    - m_Data: 49858
     m_LastClickedID:
-      m_Data: 55236
+      m_Data: 49858
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 48580
-    - m_Data: 49036
-    - m_Data: 49072
-    - m_Data: 49342
-    - m_Data: 51104
-    - m_Data: 55242
+    - m_Data: 49534
+    - m_Data: 49536
+    - m_Data: 49538
+    - m_Data: 49540
+    - m_Data: 49542
+    - m_Data: 49832
     - m_Data: 1000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1009,11 +1004,11 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 48580
-    - m_Data: 49036
-    - m_Data: 49072
-    - m_Data: 49342
-    - m_Data: 51104
+    - m_Data: 49534
+    - m_Data: 49536
+    - m_Data: 49538
+    - m_Data: 49540
+    - m_Data: 49542
     - m_Data: 1000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1041,12 +1036,12 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs:
-    - m_Data: -15502
-    m_LastClickedInstanceID: -15502
+    m_SelectedInstanceIDs: []
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs:
     - m_Data: 51520
+    - m_Data: 49482
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1072,7 +1067,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 363}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 174.72794
@@ -1100,7 +1095,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 112}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 18342
+  controlID: 20407
   draggingID: 0
 --- !u!114 &11
 MonoBehaviour:
