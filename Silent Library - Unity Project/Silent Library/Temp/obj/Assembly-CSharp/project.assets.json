@@ -1,0 +1,112 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.1": {
+      "Unity.InputSystem/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Unity.InputSystem.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.InputSystem.dll": {}
+        }
+      },
+      "Unity.InputSystem.ForUI/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.InputSystem": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.InputSystem.ForUI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.InputSystem.ForUI.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Unity.InputSystem/1.0.0": {
+      "type": "project",
+      "path": "Unity.InputSystem.csproj",
+      "msbuildProject": "Unity.InputSystem.csproj"
+    },
+    "Unity.InputSystem.ForUI/1.0.0": {
+      "type": "project",
+      "path": "Unity.InputSystem.ForUI.csproj",
+      "msbuildProject": "Unity.InputSystem.ForUI.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.1": [
+      "Unity.InputSystem >= 1.0.0",
+      "Unity.InputSystem.ForUI >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/devlord/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/media/devlord/Additional/GitProjects/Solo_Game_Jam-SilentLibrary/Silent Library - Unity Project/Silent Library/Assembly-CSharp.csproj",
+      "projectName": "Assembly-CSharp",
+      "projectPath": "/media/devlord/Additional/GitProjects/Solo_Game_Jam-SilentLibrary/Silent Library - Unity Project/Silent Library/Assembly-CSharp.csproj",
+      "packagesPath": "/home/devlord/.nuget/packages/",
+      "outputPath": "/media/devlord/Additional/GitProjects/Solo_Game_Jam-SilentLibrary/Silent Library - Unity Project/Silent Library/Temp/obj/Assembly-CSharp/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/devlord/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "projectReferences": {
+            "/media/devlord/Additional/GitProjects/Solo_Game_Jam-SilentLibrary/Silent Library - Unity Project/Silent Library/Unity.InputSystem.ForUI.csproj": {
+              "projectPath": "/media/devlord/Additional/GitProjects/Solo_Game_Jam-SilentLibrary/Silent Library - Unity Project/Silent Library/Unity.InputSystem.ForUI.csproj"
+            },
+            "/media/devlord/Additional/GitProjects/Solo_Game_Jam-SilentLibrary/Silent Library - Unity Project/Silent Library/Unity.InputSystem.csproj": {
+              "projectPath": "/media/devlord/Additional/GitProjects/Solo_Game_Jam-SilentLibrary/Silent Library - Unity Project/Silent Library/Unity.InputSystem.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "netstandard2.1": {
+        "targetAlias": "netstandard2.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "/usr/lib/sdk/dotnet9/lib/sdk/9.0.307/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
