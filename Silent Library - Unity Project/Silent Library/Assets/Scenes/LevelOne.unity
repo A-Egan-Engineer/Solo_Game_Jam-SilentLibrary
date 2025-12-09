@@ -8176,6 +8176,8 @@ GameObject:
   m_Component:
   - component: {fileID: 967107049}
   - component: {fileID: 967107053}
+  - component: {fileID: 967107054}
+  - component: {fileID: 967107055}
   m_Layer: 0
   m_Name: PlayerModel
   m_TagString: Untagged
@@ -8257,6 +8259,42 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &967107054
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967107048}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3edf5df6a983b9dcebb5ba403335fa6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &967107055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967107048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931038826cf94d300a4d4b36d0efc1ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimations
+  PlayerMovement: {fileID: 1348243770}
+  animator: {fileID: 967107054}
 --- !u!1 &974149179
 GameObject:
   m_ObjectHideFlags: 0
@@ -11940,7 +11978,6 @@ GameObject:
   - component: {fileID: 1348243772}
   - component: {fileID: 1348243771}
   - component: {fileID: 1348243770}
-  - component: {fileID: 1348243773}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -11978,7 +12015,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   playerModel: {fileID: 967107048}
+  move:
+    m_Name: Move
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 8ce4b65c-6b53-4d11-80e0-4619d94f5687
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  rotateLeft:
+    m_Name: Rotate Left
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 88855dec-5dfa-49ca-b239-2de445789ff7
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  rotateRight:
+    m_Name: Rotate Right
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: a1689598-7f86-4ab3-8dd4-33ef83e5dd44
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
   moveSpeed: 2
+  isMoving: 0
 --- !u!70 &1348243771
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -12043,18 +12108,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1348243773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1348243768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 931038826cf94d300a4d4b36d0efc1ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimations
 --- !u!1 &1349167255
 GameObject:
   m_ObjectHideFlags: 0

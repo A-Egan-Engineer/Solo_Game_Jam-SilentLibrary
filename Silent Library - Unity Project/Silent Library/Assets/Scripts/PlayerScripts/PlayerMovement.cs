@@ -6,14 +6,16 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject playerModel;
 
-    InputAction move;
-    InputAction rotateLeft;
-    InputAction rotateRight;
+    public  InputAction move;
+    public  InputAction rotateLeft;
+    public  InputAction rotateRight;
 
     public float moveSpeed = 5f;
+    public bool isMoving;
 
     void Start()
     {
+        isMoving = false;
         move = InputSystem.actions.FindAction("Player/Move");
         rotateLeft = InputSystem.actions.FindAction("Player/RotateLeft");
         rotateRight = InputSystem.actions.FindAction("Player/RotateRight");
@@ -21,15 +23,24 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        PlayerMove();
+        PlayerRotate();
+    }
+
+    public void PlayerMove()
+    {
         Vector2 moveValue = move.ReadValue<Vector2>();
 
         if (moveValue != Vector2.zero)
         {
             Vector2 moveDirection = new Vector2(moveValue.x, moveValue.y);
             transform.Translate(moveDirection * moveSpeed * Time.deltaTime);
+            isMoving = true;
         }
-
-        PlayerRotate();
+        else
+        {
+            isMoving = false;
+        }
     }
 
     public void PlayerRotate()
