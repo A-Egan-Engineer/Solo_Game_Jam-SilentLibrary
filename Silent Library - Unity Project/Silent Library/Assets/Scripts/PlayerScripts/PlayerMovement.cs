@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -58,62 +59,91 @@ public class PlayerMovement : MonoBehaviour
 
     public void PlayerRotate()
     {
-        
-        if (rotateUp.IsPressed() && isFacingRight)
-        {
-            var rotatePlayerUp = playerModel.transform.eulerAngles = new Vector3(0, 70, 0);
-            rotatePlayerUp.Normalize();
-            isFacingRight = true;
-            isFacingLeft = false;
-        }
-        if (rotateUp.IsPressed() && rotateRight.IsPressed())
-        {
-            var rotatePlayerUpRight = playerModel.transform.eulerAngles = new Vector3(0, 35, 0);
-            rotatePlayerUpRight.Normalize();
-            isFacingRight = true;
-            isFacingLeft = false;
-        }
-        if (rotateUp.IsPressed() && isFacingLeft)
-        {
-            var rotatePlayerUp = playerModel.transform.eulerAngles = new Vector3(0, 140, 0);
-            rotatePlayerUp.Normalize();
-            isFacingLeft = true;
-            isFacingRight = false;
-        }
-        if (rotateUp.IsPressed() && rotateLeft.IsPressed())
-        {
-            var rotatePlayerUpLeft = playerModel.transform.eulerAngles = new Vector3(0, 110, 0);
-            rotatePlayerUpLeft.Normalize();
-            isFacingLeft = true;
-            isFacingRight = false;
-        }
-        if (rotateDown.IsPressed() && isFacingRight)
-        {
-            var rotatePlayerDown = playerModel.transform.eulerAngles = new Vector3(0, -35, 0);
-            rotatePlayerDown.Normalize();
-            isFacingRight = true;
-            isFacingLeft = false;
-        }
-        if (rotateDown.IsPressed() && isFacingLeft)
-        {
-            var rotatePlayerDown = playerModel.transform.eulerAngles = new Vector3(0, -140, 0);
-            rotatePlayerDown.Normalize();
-            isFacingLeft = true;
-            isFacingRight = false;
-        }
         if (rotateLeft.IsPressed())
         {
-            var rotatePlayerLeft = playerModel.transform.eulerAngles = new Vector3(0, -180, 0);
+            var rotatePlayerLeft = playerModel.transform.eulerAngles = new Vector3(0, 180, 0); // A
             rotatePlayerLeft.Normalize();
             isFacingLeft = true;
             isFacingRight = false;
         }
         if (rotateRight.IsPressed())
         {
-            var rotatePlayerRight = playerModel.transform.eulerAngles = new Vector3(0, 0, 0);
+            var rotatePlayerRight = playerModel.transform.eulerAngles = new Vector3(0, 0, 0); // D
             rotatePlayerRight.Normalize();
             isFacingRight = true;
             isFacingLeft = false;            
+        }
+        if (isFacingRight && rotateUp.IsPressed())
+        {
+            var rotatePlayerUp = playerModel.transform.eulerAngles = new Vector3(0, 55, 0); // Facing Right & W
+            rotatePlayerUp.Normalize();
+            isFacingUp = true;
+            isFacingRight = true;
+            isFacingLeft = false;
+            isFacingDown = false;
+        }
+        if (isFacingRight && rotateUp.IsPressed() && rotateRight.IsPressed()) // Facing Right & W + D
+        {
+            var rotatePlayerUp = playerModel.transform.eulerAngles = new Vector3(0, 45, 0);
+            rotatePlayerUp.Normalize();
+            isFacingUp = true;
+            isFacingRight = true;
+            isFacingLeft = false;
+            isFacingDown = false;
+        }
+        if (isFacingRight && rotateDown.IsPressed()) // Facing Right & S
+        {
+            var rotatePlayerDown = playerModel.transform.eulerAngles = new Vector3(0, 60, 0);
+            rotatePlayerDown.Normalize();
+            isFacingDown = true;
+            isFacingRight = true;
+            isFacingLeft = false;
+            isFacingUp = false;
+        }
+        if (isFacingRight && rotateDown.IsPressed() && rotateRight.IsPressed()) // Facing Right & S + D
+        {
+            var rotatePlayerDown = playerModel.transform.eulerAngles = new Vector3(0, 50, 0);
+            rotatePlayerDown.Normalize();
+            isFacingDown = true;
+            isFacingRight = true;
+            isFacingLeft = false;
+            isFacingUp = false;
+        }
+        if (isFacingLeft && rotateUp.IsPressed()) // Facing Left & W
+        {
+            var rotatePlayerUp = playerModel.transform.eulerAngles = new Vector3(0, -130, 0);
+            rotatePlayerUp.Normalize();
+            isFacingUp = true;
+            isFacingLeft = true;
+            isFacingRight = false;
+            isFacingDown = false;
+        }
+        if (isFacingLeft && rotateUp.IsPressed() && rotateLeft.IsPressed()) // Facing Left & W + A
+        {
+            var rotatePlayerUp = playerModel.transform.eulerAngles = new Vector3(0, -140, 0);
+            rotatePlayerUp.Normalize();
+            isFacingUp = true;
+            isFacingLeft = true;
+            isFacingRight = false;
+            isFacingDown = false;
+        }
+        if (isFacingLeft && rotateDown.IsPressed()) // Facing Left & S
+        {
+            var rotatePlayerDown = playerModel.transform.eulerAngles = new Vector3(0, -110, 0);
+            rotatePlayerDown.Normalize();
+            isFacingDown = true;
+            isFacingLeft = true;
+            isFacingRight = false;
+            isFacingUp = false;
+        }
+        if (isFacingLeft && rotateDown.IsPressed() && rotateLeft.IsPressed()) // Facing Left & S + A
+        {
+            var rotatePlayerDown = playerModel.transform.eulerAngles = new Vector3(0, -120, 0);
+            rotatePlayerDown.Normalize();
+            isFacingDown = true;
+            isFacingLeft = true;
+            isFacingRight = false;
+            isFacingUp = false;
         }
     }
 

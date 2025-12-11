@@ -8193,7 +8193,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 967107048}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -12024,6 +12024,24 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  rotateUp:
+    m_Name: Rotate Up
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 61df853e-0c2a-4311-b009-bcc0cceddfd4
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  rotateDown:
+    m_Name: Rotate Down
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 6e25ee8b-22db-4001-9bc3-30296c82a2fc
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
   rotateLeft:
     m_Name: Rotate Left
     m_Type: 0
@@ -12044,6 +12062,10 @@ MonoBehaviour:
     m_Flags: 0
   moveSpeed: 2
   isMoving: 0
+  isFacingUp: 0
+  isFacingDown: 0
+  isFacingLeft: 0
+  isFacingRight: 0
 --- !u!70 &1348243771
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
