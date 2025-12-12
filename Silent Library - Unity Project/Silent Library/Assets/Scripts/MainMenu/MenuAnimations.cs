@@ -1,3 +1,4 @@
+using Unity.VisualScripting.ReorderableList;
 using UnityEngine;
 
 public class MenuAnimations : MonoBehaviour
@@ -6,18 +7,36 @@ public class MenuAnimations : MonoBehaviour
     public Animator animator;
     public GameObject playerModel;
 
+    public Transform startPoint;
+    public Transform endPoint;
+
+    private bool movingToEndPoint;
+
+    private bool movingToStartPoint;
+
+    void Start()
+    {
+        movingToEndPoint = true;
+        movingToStartPoint = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (playerModel.transform.position.x <= 0f)
+        if (movingToEndPoint)
         {
-            playerModel.transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+            playerModel.transform.position = Vector2.MoveTowards(playerModel.transform.position,endPoint.position, moveSpeed * Time.deltaTime);
+            animator.SetBool("isRunning", true);
         }
-        else if (playerModel.transform.position.x >= 4.8f)
+        if (playerModel.transform.position == endPoint.position)
         {
-            playerModel.transform.eulerAngles = new Vector2(0, 180);
-            playerModel.transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
+            movingToEndPoint = false;
+            movingToStartPoint = true;
         }
-    }
-        
+        if (movingToStartPoint)
+        {
+            playerModel.transform.position = Vector2.MoveTowards(playerModel.transform.position, startPoint.position, moveSpeed * Time.deltaTime);
+            animator.SetBool("isRunning", true);
+        }
+    }   
 }
