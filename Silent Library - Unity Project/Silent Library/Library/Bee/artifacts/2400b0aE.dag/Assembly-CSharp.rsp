@@ -464,6 +464,7 @@
 -analyzer:"/home/devlord/Unity/Hub/Editor/6000.3.0f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/MainMenu/MainMenuManager.cs"
+"Assets/Scripts/MainMenu/MenuAnimations.cs"
 "Assets/Scripts/PlayerScripts/PlayerAnimations.cs"
 "Assets/Scripts/PlayerScripts/PlayerMovement.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"

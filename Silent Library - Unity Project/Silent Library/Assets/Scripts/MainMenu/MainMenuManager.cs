@@ -1,6 +1,5 @@
-using JetBrains.Annotations;
-using NUnit.Framework;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenuManager : MonoBehaviour
@@ -12,11 +11,18 @@ public class MainMenuManager : MonoBehaviour
     {
         Button startBtn = startButton.GetComponent<Button>();
         startBtn.onClick.AddListener(OnStartButtonClicked);
+
+        Button exitBtn = exitButton.GetComponent<Button>();
+        exitBtn.onClick.AddListener(OnExitButtonClicked);
     }
 
     void OnStartButtonClicked()
     {
-        Debug.Log("Start Button Clicked!");
-        // Add logic to start the game
+        SceneManager.LoadScene("LevelOne");
+    }
+
+    void OnExitButtonClicked()
+    {
+        Application.Quit();
     }
 }
