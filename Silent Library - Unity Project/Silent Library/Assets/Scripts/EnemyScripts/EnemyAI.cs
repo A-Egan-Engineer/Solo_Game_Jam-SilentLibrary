@@ -3,7 +3,7 @@ using UnityEngine;
 public class EnemyAI : MonoBehaviour
 {
     public GameObject enemy;
-    int moveSpeed = 2;
+    float moveSpeed = 1.5f;
 
     public Transform pointA;
     public Transform pointB;
@@ -12,15 +12,29 @@ public class EnemyAI : MonoBehaviour
 
     Vector3 nextPosition;
 
+    int detectionRange = 2;
+
+    public Transform playerTransform;
+
+    bool chasingPlayer;
+
+    void Start()
+    {
+        nextPosition = pointA.position;
+        chasingPlayer = false;
+    }
+
     void Update()
     {
+        ChasePlayer();
         EnemyPatrol();
     }
 
     public void EnemyPatrol()
     {
-        enemy.transform.position = Vector3.MoveTowards(enemy.transform.position, nextPosition, moveSpeed * Time.deltaTime);
-        /*
+        if(!chasingPlayer)
+        {
+            enemy.transform.position = Vector3.MoveTowards(enemy.transform.position, nextPosition, moveSpeed * Time.deltaTime);
 
         if (enemy.transform.position == nextPosition)
         {
@@ -41,6 +55,19 @@ public class EnemyAI : MonoBehaviour
                 nextPosition = pointA.position;
             }
         }
-        */
+        }
+    }
+
+    public void ChasePlayer()
+    {
+        if (Vector3.Distance(enemy.transform.position, playerTransform.position) > detectionRange)
+        {
+            chasingPlayer = false;
+        }
+        else
+        {
+            chasingPlayer = true;
+            enemy.transform.position = Vector3.MoveTowards(enemy.transform.position, playerTransform.position, moveSpeed * Time.deltaTime);
+        }        
     }
 }

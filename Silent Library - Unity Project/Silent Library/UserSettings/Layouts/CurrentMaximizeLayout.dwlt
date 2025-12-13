@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 5095
+  controlID: 114
   draggingID: 0
 --- !u!114 &2
 MonoBehaviour:
@@ -149,8 +149,8 @@ MonoBehaviour:
     y: 0
     width: 216
     height: 1214
-  m_MinSize: {x: 201, y: 226}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 4}
   m_Panes:
   - {fileID: 4}
@@ -201,12 +201,10 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -34140
-      - m_Data: -33924
       - m_Data: -1314
-      - m_Data: 49096
-      - m_Data: 50212
-      - m_Data: 86600
+      - m_Data: 49374
+      - m_Data: 49450
+      - m_Data: 49920
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -224,7 +222,7 @@ MonoBehaviour:
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
-        m_ClientGUIView: {fileID: 0}
+        m_ClientGUIView: {fileID: 3}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -256,7 +254,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 112}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 5096
+  controlID: 58
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -782,9 +780,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 0.45676666, y: -0.15399733, z: -6.032479}
+    m_Target: {x: -1.3640709, y: -0.16406886, z: -0.64083207}
     speed: 2
-    m_Value: {x: 0.45676666, y: -0.15399733, z: -6.032479}
+    m_Value: {x: -1.3640709, y: -0.16406886, z: -0.64083207}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -834,9 +832,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 4.11408
+    m_Target: 5.1691146
     speed: 2
-    m_Value: 4.11408
+    m_Value: 5.1691146
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -854,7 +852,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: 0.19547445, y: 0.023479756, z: -0.0023626243, w: 0.9804153}
   m_LastSceneViewOrtho: 0
   m_Viewpoint:
     m_SceneView: {fileID: 7}
@@ -1019,7 +1017,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Audio
+    - Assets/Scripts/EnemyScripts
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1029,7 +1027,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Audio
+  - Assets/Scripts/EnemyScripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /media/devlord/Additional/GitProjects/Solo_Game_Jam-SilentLibrary/Silent
     Library - Unity Project/Silent Library
@@ -1039,18 +1037,18 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
-    - m_Data: 87844
+    - m_Data: 50984
     m_LastClickedID:
-      m_Data: 87844
+      m_Data: 50984
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 50754
-    - m_Data: 50756
-    - m_Data: 50758
-    - m_Data: 50760
-    - m_Data: 50762
-    - m_Data: 50764
-    - m_Data: 50868
+    - m_Data: 50660
+    - m_Data: 50662
+    - m_Data: 50664
+    - m_Data: 50666
+    - m_Data: 50668
+    - m_Data: 50670
+    - m_Data: 50976
     - m_Data: 1000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1084,13 +1082,12 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 50754
-    - m_Data: 50756
-    - m_Data: 50758
-    - m_Data: 50760
-    - m_Data: 50762
-    - m_Data: 50764
-    - m_Data: 1000000000
+    - m_Data: 50660
+    - m_Data: 50662
+    - m_Data: 50664
+    - m_Data: 50666
+    - m_Data: 50668
+    - m_Data: 50670
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1126,6 +1123,7 @@ MonoBehaviour:
     - m_Data: 50380
     - m_Data: 50126
     - m_Data: 50128
+    - m_Data: 92514
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1143,7 +1141,7 @@ MonoBehaviour:
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
-      m_ClientGUIView: {fileID: 9}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1179,7 +1177,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 112}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 5106
+  controlID: 115
   draggingID: 0
 --- !u!114 &12
 MonoBehaviour:
@@ -1200,8 +1198,8 @@ MonoBehaviour:
     y: 0
     width: 589
     height: 811
-  m_MinSize: {x: 276, y: 76}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
