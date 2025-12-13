@@ -1,42 +1,44 @@
-using Unity.VisualScripting.ReorderableList;
+using System.Drawing;
+using NUnit.Framework.Constraints;
 using UnityEngine;
 
 public class MenuAnimations : MonoBehaviour
 {
-    public int moveSpeed = 2;
     public Animator animator;
     public GameObject playerModel;
 
-    public Transform startPoint;
-    public Transform endPoint;
+    public Transform pointA;
+    public Transform pointB;
 
-    private bool movingToEndPoint;
+    public Vector3 nextPosition;
 
-    private bool movingToStartPoint;
+    public int moveSpeed = 2;
 
     void Start()
     {
-        movingToEndPoint = true;
-        movingToStartPoint = false;
+        nextPosition = pointB.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (movingToEndPoint)
+        animator.SetBool("isRunning", true);
+        
+        playerModel.transform.position = Vector3.MoveTowards(playerModel.transform.position, nextPosition, moveSpeed * Time.deltaTime);
+
+        if (playerModel.transform.position == nextPosition)
         {
-            playerModel.transform.position = Vector2.MoveTowards(playerModel.transform.position,endPoint.position, moveSpeed * Time.deltaTime);
-            animator.SetBool("isRunning", true);
+            nextPosition = (nextPosition == pointA.position) ? pointB.position : pointA.position;
         }
-        if (playerModel.transform.position == endPoint.position)
+
+        if (playerModel.transform.position == pointB.position)
         {
-            movingToEndPoint = false;
-            movingToStartPoint = true;
+            playerModel.transform.eulerAngles = new Vector2(0,180);
         }
-        if (movingToStartPoint)
+        else if (playerModel.transform.position == pointA.position)
         {
-            playerModel.transform.position = Vector2.MoveTowards(playerModel.transform.position, startPoint.position, moveSpeed * Time.deltaTime);
-            animator.SetBool("isRunning", true);
+            playerModel.transform.eulerAngles = new Vector2(0,0);
         }
-    }   
-}
+    }
+}   
+
