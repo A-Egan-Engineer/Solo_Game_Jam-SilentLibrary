@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public  InputAction rotateLeft;
     public  InputAction rotateRight;
 
-    public float moveSpeed = 5f;
+    public float moveSpeed = 2f;
 
     public bool isMoving;
     public bool isFacingUp;

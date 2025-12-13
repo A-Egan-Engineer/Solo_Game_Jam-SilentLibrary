@@ -3,7 +3,7 @@ using UnityEngine;
 public class EnemyAI : MonoBehaviour
 {
     public GameObject enemy;
-    float moveSpeed = 1.5f;
+    float moveSpeed = 1f;
 
     public Transform pointA;
     public Transform pointB;
@@ -66,6 +66,7 @@ public class EnemyAI : MonoBehaviour
         }
         else
         {
+            moveSpeed = 1.6f;
             chasingPlayer = true;
             enemy.transform.position = Vector3.MoveTowards(enemy.transform.position, playerTransform.position, moveSpeed * Time.deltaTime);
         }        
