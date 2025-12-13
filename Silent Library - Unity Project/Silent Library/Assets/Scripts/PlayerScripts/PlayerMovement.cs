@@ -59,6 +59,14 @@ public class PlayerMovement : MonoBehaviour
 
     public void PlayerRotate()
     {
+        if (!isMoving)
+        {
+            playerModel.transform.eulerAngles = new Vector3(0, 0, 0);
+            isFacingRight = true;
+            isFacingLeft = false;
+            isFacingUp = false;
+            isFacingDown = false;
+        }
         if (rotateLeft.IsPressed())
         {
             var rotatePlayerLeft = playerModel.transform.eulerAngles = new Vector3(0, 180, 0); // A
