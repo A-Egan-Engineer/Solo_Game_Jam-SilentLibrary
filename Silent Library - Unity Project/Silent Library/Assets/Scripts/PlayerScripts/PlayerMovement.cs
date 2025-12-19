@@ -16,10 +16,10 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 2f;
 
     public bool isMoving;
-    public bool isFacingUp;
-    public bool isFacingDown;
-    public bool isFacingLeft;
-    public bool isFacingRight;
+    bool isFacingUp;
+    bool isFacingDown;
+    bool isFacingLeft;
+    bool isFacingRight;
 
     void Start()
     {

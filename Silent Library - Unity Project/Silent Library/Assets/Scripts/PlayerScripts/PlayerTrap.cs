@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -13,6 +12,7 @@ public class PlayerTrap : MonoBehaviour
     public int maxTraps = 3;
     private int currentTraps;
     public bool canSetTrap;
+    Vector3 spawnPosition;
 
     void Start()
     {
@@ -28,11 +28,13 @@ public class PlayerTrap : MonoBehaviour
 
     public void SetTrap()
     {
+        spawnPosition = new Vector3(transform.position.x, transform.position.y, -0.5f);
+
         if (canSetTrap)
         {
             if (trapSetBtn.WasPressedThisFrame() && currentTraps < maxTraps)
             {
-                Instantiate(trapPrefab, transform.position, Quaternion.identity);
+                Instantiate(trapPrefab, spawnPosition, Quaternion.identity);
                 AudioSource.PlayClipAtPoint(trapSetSound, transform.position);
                 currentTraps++;
             }
